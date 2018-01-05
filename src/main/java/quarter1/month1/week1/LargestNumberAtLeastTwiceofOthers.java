@@ -1,6 +1,4 @@
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
+package quarter1.month1.week1;
 
 //https://leetcode.com/problems/largest-number-at-least-twice-of-others
 public class LargestNumberAtLeastTwiceofOthers {
