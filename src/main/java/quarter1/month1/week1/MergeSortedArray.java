@@ -25,8 +25,26 @@ public class MergeSortedArray {
         while (j>=0){
             nums1[k--] = nums2[j--];
         }
+    }
 
 
+    //both a and b is ascend. MergeSort nlogn  空间On
+    public void merge(int[] a, int[] b, int[] c){
+        int i=0,j=0,k=0;
+        while (i<=a.length && j<=b.length){
+            if (a[i]<=b[i]){
+                c[k++]=a[i++];
+            }
+            else{
+                c[k++]=b[j++];
+            }
+        }
+        while (i<=a.length){
+            c[k++]=a[i++];
+        }
+        while (j<=b.length){
+            c[k++]=b[j++];
+        }
     }
 
     public static void main(String[] args) {
